@@ -1,0 +1,19 @@
+// xml파일의 명령을 처리해 줄 Interface를 만들어줍니다.
+// GraphVO 클래스의 pos_type과 mb_id 속성을 사용해 쿼리를 실행시킬 것이기 때문에
+// 매개변수는 GraphVO 클래스로 설정했습니다.
+// 결과값은 7개의 값을 모두 담아줘야 하기 때문에 List<GraphVO>로 리턴 값을 설정해줬습니다.
+
+package city.turtle.service;
+
+import java.util.List;
+import city.turtle.vo.GraphVO;
+
+public interface GraphService {
+  public List<GraphVO> countTurtle(GraphVO vo) throws Exception;
+}
+
+// root-context.xml
+// 새로 만든 패키지들을 scan할 수 있도록 root-context.xml에 mybatis-spring:scan코드를 입력해줍니다.
+
+<mybatis-spring:scan base-package="city.turtle.vo"/>
+<mybatis-spring:scan base-package="city.turtle.service"/>
