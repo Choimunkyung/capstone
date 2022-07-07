@@ -1,3 +1,9 @@
+// 테이블과 VO를 생성했으니 이제 차트에 넣을 값을 select 해줄 쿼리를 작성하면 됩니다.
+// 사용자가 자신의 ID에 해당하는 데이터를 볼 수 있어야 하고 차트의 종류는 두 가지로 만들 계획입니다.
+// 시간은 현재부터 7일 이전까지 보여줄 수 있또록 설정했습니다.
+// BETWEEN A AND B와 DATE_SUB 문법을 사용했습니다.
+// 이 xml파일은 mapper에서 설정한 namespace를 통해 Interface와 연결됩니다.
+
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace = "city.turtle.service.GraphService">
