@@ -1,3 +1,6 @@
+// 만들 테이블 컬럼에 맞는 VO를 생성해줍니다. Lombok API를 사용하면 getter, setter, 생성자 없이
+// VO를 구성할 수 있어 좋은 것 같습니다.
+
 package city.turtle.vo;
 
 import lombok.AllArgsConstructor;
