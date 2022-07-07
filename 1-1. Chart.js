@@ -1,3 +1,6 @@
+// 먼저 웹 페이지에서 제대로 보여지는지 확인하기 위해 chart.js를 통해 텅 빈 그래프를 만들었습니다.
+// 잘 구현됩니다.
+
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <canvas id = "line-chart" width = "300" height = "250"></canvas>
 <script>
