@@ -1,3 +1,8 @@
+// 이제 차트에 넣을 DB를 구성해보겠습니다.
+// Posture 테이블은 pos_seq를 PK로 설정하고 회원 아이디를 FK로 설정했습니다.
+// 회원 테이블은 회원이 PK입니다. 두 테이블은 1:N 관계입니다.
+// 데이터베이스를 만들었으면 테스트를 위해 DB에 미리 값을 넣어줍니다.
+
 CREATE TABLE POSTURE
 (
   'POS_SEQ' INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '자세 순번',
